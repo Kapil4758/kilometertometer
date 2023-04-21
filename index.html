@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="km-m-section">
+        <div class="enter-number">
+            <input type="number" id="number">
+            <select id="select" onchange="return getselect()">
+                <option value="1000">Kilometer</option>
+                <option value="1000">Meter</option>
+            </select>
+            <input type="button" value="Convert" id="convert" onclick="return getvalue()">
+        </div>
+
+        <div class="shownumber" id="shownumber">
+            <h1 id="km-title"></h1><span id="km-type"></span>
+        </div>
+    </section>
+
+    <script src="js/custom.js"></script>
+    
+</body>
+</html>
